@@ -4,8 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <style>
+      /* Center everything in the body */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f2f5;
+      }
+
+      #container {
+        background: white;
+        padding: 2.5rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        min-width: 350px;
+      }
+
+      /* Style the buttons */
+      .my-button-style {
+        background-color: #4f46e5;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        margin: 8px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        transition: all 0.2s ease;
+        box-shadow: 0 4px 6px rgba(79, 70, 229, 0.2);
+      }
+
+      .my-button-style:hover {
+        background-color: #4338ca;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(79, 70, 229, 0.3);
+      }
+
+      .my-button-style:active {
+        transform: translateY(0);
+      }
+
+      .my-button-style:disabled {
+        background-color: #d1d5db;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+      }
+
+      /* Scoreboard area */
+      #scores {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid #f3f4f6;
+      }
+
+      h2 {
+        color: #1f2937;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: #6b7280;
+        font-size: 0.95rem;
+        background: #f9fafb;
+        padding: 10px;
+        border-radius: 8px;
+        display: inline-block;
+      }
+
+      h1 {
+        color: #059669;
+        font-size: 2rem;
+        margin-top: 20px;
+      }
+    </style>
   </head>
-  <body>
+  <body id="container">
     <script src="main.js"></script>
   </body>
 </html>
